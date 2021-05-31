@@ -1,0 +1,23 @@
+img {
+  width: 100%;
+  border-radius: 20px 0 0 0;
+}
+
+.cardholder {
+  width: 20%;
+  height: 20%;
+  background-color: beige;
+  margin: 10px;
+  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  border-radius: 20px 0 20px 0;
+  display: inline-block;
+}
+
+.cardholder div {
+  padding: 10px 26px;
+}
+
+.cardholder:hover {
+  box-shadow: 0 20px 16px 0 rgba(0, 0, 0, 0.2);
+}
