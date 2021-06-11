@@ -1,17 +1,23 @@
-import React, { Component } from 'react'
+import React from 'react'
 import '../css/cardinfo.css'
+import '../css/w3.css'
 
-class CardInfo extends Component {
-    render() {
-        return (
-            <div className="cardholder">
-                <img src={this.props.profile_image} alt="avatar"></img>
-                <div>
-                    <h4>{ this.props.name }</h4>
-                    <p>{ this.props.designation }</p>
-                </div>          
-            </div>
-        )
-    }
+
+const Card = props => {
+    return (
+        <div className="cardholder">
+            <img src={props.profile_image} alt="avatar"></img>
+            <div>
+                <div className="namediv">
+                    <h4>{ props.name }</h4>
+                </div>
+                <input class="w3-input" type="text" onChange={props.setName} value={props.name}/>
+                <button className="button button1" onClick={props.changeName}>Change Name</button>
+                <p>{ props.designation }</p>
+                <span>{ props.children }</span>
+            </div>          
+        </div>
+    )
 }
-export default CardInfo;
+
+export default Card;
