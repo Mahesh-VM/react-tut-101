@@ -11,8 +11,8 @@ const Card = props => {
                 <div className="namediv">
                     <h4>{ props.name }</h4>
                 </div>
-                <input class="w3-input" type="text" onChange={props.setName} value={props.name}/>
-                <button className="button button1" onClick={props.changeName}>Change Name</button>
+                <input className="w3-input" type="text" onChange={props.setName} value={props.name}/>
+                <button className="button button1" onClick={props.onDelete}>Delete</button>
                 <p>{ props.designation }</p>
                 <span>{ props.children }</span>
             </div>          
