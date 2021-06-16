@@ -1,9 +1,10 @@
 import styled, { css } from "styled-components";
 
+console.log('button element.')
 const Button = styled.button`
 border: none;
 ${props=>props.color && css`
-background-color: ${props=>props.length<2 ? props.theme[props.color='default']: 'green'};
+background-color: ${props=>props.length<2 ? props.theme[props.color='primary']: 'green'};
 color: ${props=>props.length<2 ? 'black' : 'white'};
 `}
 padding: 16px 32px;
